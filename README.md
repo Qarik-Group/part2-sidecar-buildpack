@@ -1,4 +1,4 @@
-# Sample supple buildpack for Cloud Foundry sidecars
+# Sample supply buildpack for Cloud Foundry sidecars
 
 ## Example app
 
