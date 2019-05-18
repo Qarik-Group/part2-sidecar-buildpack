@@ -14,10 +14,10 @@ If you view the logs you'll see the sidecar's output and the ruby app's output:
 ```plain
 $ cf logs app-using-config-server --recent
 ...
-2019-05-18T12:53:35.12+1000 [APP/PROC/WEB/SIDECAR/CONFIG-SERVER/0] OUT Starting dummy config-server...
-2019-05-18T12:53:35.65+1000 [APP/PROC/WEB/0] ERR [2019-05-18 02:53:35] INFO  WEBrick 1.3.1
-2019-05-18T12:53:35.65+1000 [APP/PROC/WEB/0] ERR [2019-05-18 02:53:35] INFO  ruby 2.4.6 (2019-04-01) [x86_64-linux]
-2019-05-18T12:53:35.65+1000 [APP/PROC/WEB/0] ERR [2019-05-18 02:53:35] INFO  WEBrick::HTTPServer#start: pid=16 port=8080
+[APP/PROC/WEB/SIDECAR/CONFIG-SERVER/0] OUT Starting dummy config-server...
+[APP/PROC/WEB/0] ERR [2019-05-18 02:53:35] INFO  WEBrick 1.3.1
+[APP/PROC/WEB/0] ERR [2019-05-18 02:53:35] INFO  ruby 2.4.6 (2019-04-01) [x86_64-linux]
+[APP/PROC/WEB/0] ERR [2019-05-18 02:53:35] INFO  WEBrick::HTTPServer#start: pid=16 port=8080
 ```
 
 ## Thanks
