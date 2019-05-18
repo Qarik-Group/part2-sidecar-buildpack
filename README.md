@@ -17,3 +17,7 @@ If you view the logs you'll see the sidecar's output and the ruby app's output:
 2019-05-18T12:53:35.65+1000 [APP/PROC/WEB/0] ERR [2019-05-18 02:53:35] INFO  ruby 2.4.6 (2019-04-01) [x86_64-linux]
 2019-05-18T12:53:35.65+1000 [APP/PROC/WEB/0] ERR [2019-05-18 02:53:35] INFO  WEBrick::HTTPServer#start: pid=16 port=8080
 ```
+
+## Thanks
+
+The sample app in `fixtures/rubyapp` and its example of running a fictional `config-server` sidecar originate from https://github.com/cloudfoundry-samples/capi-sidecar-samples/tree/master/sidecar-dependent-app.
