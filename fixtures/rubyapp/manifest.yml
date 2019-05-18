@@ -10,8 +10,8 @@ applications:
   buildpacks:
   - https://github.com/drnic/sample-config-server-buildpack
   - ruby_buildpack
-  # sidecars:
-  # - name: config-server
-  #   process_types:
-  #   - web
-  #   command: './config-server'
+  sidecars:
+  - name: config-server
+    process_types:
+    - web
+    command: './config-server'

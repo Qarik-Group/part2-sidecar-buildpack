@@ -1,3 +1,10 @@
 #!/bin/bash
 
 echo "-----> Installing config-server buildpack"
+
+cat > config-server <<-SHELL
+#!/bin/bash
+
+echo "Starting dummy config-server..."
+tail -f /dev/null
+SHELL
