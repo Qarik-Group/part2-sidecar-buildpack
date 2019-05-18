@@ -16,3 +16,5 @@ cat > $BUILD_DIR/config-server <<-SHELL
 echo "Starting dummy config-server..."
 tail -f /dev/null
 SHELL
+
+chmod +x $BUILD_DIR/config-server
