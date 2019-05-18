@@ -4,5 +4,5 @@
 
 ```plain
 cd fixtures/rubyapp
-cf push -f manifest.yml
+cf push -f fixtures/rubyapp/manifest.yml
 ```
