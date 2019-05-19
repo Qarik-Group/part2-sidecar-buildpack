@@ -10,13 +10,22 @@ Run through the demonstration below, and then see the highlights of parts of thi
 
 This demonstration of sidecars requires a Cloud Foundry running [capi-release](https://github.com/cloudfoundry/capi-release) [`1.79.0`](https://github.com/cloudfoundry/capi-release/releases/tag/1.79.0) or greater (for example [cf-deployment v7.11.0](https://github.com/cloudfoundry/cf-deployment/releases/tag/v7.11.0) or higher).
 
+At time of writing, unfortunately Cloud Foundry running locally with [CFDev](https://github.com/cloudfoundry-incubator/cfdev) (`cf dev start`) does not yet have Sidecar support.
+
+Fortunately, we can fix our CFDev with [this script](https://gist.github.com/drnic/777e344bb34e32e102b67f2eb2e79bc1). Hurray!
+
+```plain
+cf dev start
+eval "$(cf dev bosh env)"
+curl -sS https://gist.githubusercontent.com/drnic/777e344bb34e32e102b67f2eb2e79bc1/raw/344696301f133622044082fd321a75093d123951/update-cf-capi.sh | bash -
+```
+
 ## Demonstration
 
 ```plain
-cd fixtures/rubyapp
 cf v3-create-app app-using-config-server
-cf v3-apply-manifest -f manifest.yml
-cf v3-push app-using-config-server
+cf v3-apply-manifest -f fixtures/rubyapp/manifest.yml
+cf v3-push app-using-config-server -p fixtures/rubyapp
 ```
 
 If you view the logs you'll see the sidecar's output and the ruby app's output:
