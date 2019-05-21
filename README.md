@@ -18,6 +18,8 @@ Fortunately, we can fix our CFDev with [this script](https://gist.github.com/drn
 cf dev start
 eval "$(cf dev bosh env)"
 curl -sS https://gist.githubusercontent.com/drnic/777e344bb34e32e102b67f2eb2e79bc1/raw/344696301f133622044082fd321a75093d123951/update-cf-capi.sh | bash -
+
+cf login -a https://api.dev.cfdev.sh --skip-ssl-validation -u user -p pass
 ```
 
 ## Demonstration
