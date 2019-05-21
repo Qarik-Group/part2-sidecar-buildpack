@@ -1,4 +1,4 @@
-# Sample #1 - Supply buildpack for Cloud Foundry sidecars
+# Part 2 - Supply buildpack for Cloud Foundry sidecars
 
 Cloud Foundry sidecars are an additional process running inside your application container (see [blog post](https://www.cloudfoundry.org/blog/how-to-push-an-app-to-cloud-foundry-with-sidecars/)). Cloud Foundry buildpacks allow the installation of additional software within your application container.
 
@@ -54,7 +54,7 @@ Our sample application's `manifest.yml` specifies this buildpack as the first in
 
 ```yaml
   buildpacks:
-  - https://github.com/drnic/sample1-sidecar-buildpack
+  - https://github.com/starkandwayne/part2-sidecar-buildpack
   - ruby_buildpack
 ```
 

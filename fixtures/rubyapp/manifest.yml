@@ -8,7 +8,7 @@ applications:
   stack: cflinuxfs3
   path: .
   buildpacks:
-  - https://github.com/drnic/sample1-sidecar-buildpack
+  - https://github.com/starkandwayne/part2-sidecar-buildpack
   - ruby_buildpack
   sidecars:
   - name: config-server
