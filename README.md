@@ -6,6 +6,12 @@ In this sample project, we use a buildpack to create a dummy executable `config-
 
 Run through the demonstration below, and then see the highlights of parts of this repo/buildpack.
 
+## Part 1?
+
+If this is "Part 2", where is "Part 1"?
+
+I consider Tim Downey's post [How to Push an App to Cloud Foundry with Sidecars](https://www.cloudfoundry.org/blog/how-to-push-an-app-to-cloud-foundry-with-sidecars/) to be "Part 1" in a series of articles and companion repositories. The companion repo for Tim's article is https://github.com/cloudfoundry-samples/capi-sidecar-samples which contains a Ruby application and a sidecar application.
+
 ## Requirements
 
 This demonstration of sidecars requires a Cloud Foundry running [capi-release](https://github.com/cloudfoundry/capi-release) [`1.79.0`](https://github.com/cloudfoundry/capi-release/releases/tag/1.79.0) or greater (for example [cf-deployment v7.11.0](https://github.com/cloudfoundry/cf-deployment/releases/tag/v7.11.0) or higher).
